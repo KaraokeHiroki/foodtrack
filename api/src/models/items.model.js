@@ -1,7 +1,6 @@
 // See http://docs.sequelizejs.com/en/latest/docs/models-definition/
 // for more of what you can do here.
 const Sequelize = require('sequelize');
-const { toDefaultValue } = require('sequelize/types/lib/utils');
 const DataTypes = Sequelize.DataTypes;
 
 module.exports = function (app) {
@@ -64,7 +63,7 @@ module.exports = function (app) {
   items.associate = function (models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
-    items.belongsTo(models.foods);
+    items.belongsTo(models.foods, { foreignKey: { allowNull: false } });
   };
 
   return items;
