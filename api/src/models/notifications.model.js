@@ -6,10 +6,22 @@ const DataTypes = Sequelize.DataTypes;
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
   const notifications = sequelizeClient.define('notifications', {
-    text: {
+    message: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
+    date_sent: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    food: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    status: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
   }, {
     hooks: {
       beforeCount(options) {
