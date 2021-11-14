@@ -11,7 +11,7 @@ module.exports = function (app) {
       allowNull: false
     },
     date_sent: {
-      type: DataTypes.STRING,
+      type: DataTypes.DATE,
       allowNull: false
     },
     food: {

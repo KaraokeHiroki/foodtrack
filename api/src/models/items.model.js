@@ -63,7 +63,7 @@ module.exports = function (app) {
   items.associate = function (models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
-    items.belongsTo(models.foods, { foreignKey: { allowNull: false } });
+    items.belongsTo(models.foods, { through: 'foods_items' })
   };
 
   return items;

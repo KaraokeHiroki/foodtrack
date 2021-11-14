@@ -30,6 +30,7 @@ module.exports = function (app) {
   foods.associate = function (models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
+    foods.belongsToMany(models.items, { through: 'foods_items' })
   };
 
   return foods;
