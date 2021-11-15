@@ -64,6 +64,7 @@ module.exports = function (app) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
     items.belongsTo(models.foods, { through: 'foods_items' })
+    items.belongsToMany(models.notifications, { through: 'items_notifications' })
   };
 
   return items;
