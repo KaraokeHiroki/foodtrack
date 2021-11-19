@@ -26,7 +26,7 @@ module.exports = function (app) {
     },
     notes: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     must_use_immediately: {
       type: DataTypes.BOOLEAN,
@@ -63,8 +63,8 @@ module.exports = function (app) {
   items.associate = function (models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
-    items.belongsTo(models.foods, { through: 'foods_items' })
-    items.belongsToMany(models.notifications, { through: 'items_notifications' })
+    items.belongsTo(models.foods)
+    items.hasMany(models.notifications)
   };
 
   return items;
