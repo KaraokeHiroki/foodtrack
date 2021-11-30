@@ -43,6 +43,7 @@
 <v-bottom-navigation
     :value="value"
     color="primary"
+    app
   >
       <v-btn to="/">
         <span>Home</span>
@@ -61,6 +62,12 @@
 
         <v-icon>mdi-map-marker</v-icon>
       </v-btn>
+
+      <v-btn to="/notifications">
+        <span>Notifications</span>
+
+        <v-icon>mdi-map-marker</v-icon>
+      </v-btn>
     </v-bottom-navigation>
   </v-app>
 </template>
@@ -71,7 +78,7 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
+    value: '/'
   })
 }
 </script>

@@ -1,17 +1,10 @@
 <template>
     <v-card>
-    <v-card-title>
+        <v-card-title>
             Foods
         </v-card-title>
         <v-card-text>
-            <ul>
-                <li>
-                v-for="food in foods"
-                :key="foods.id"
-                >
-                {{ food.name }}
-                </li>
-            </ul>
+          <food-list/>
         </v-card-text>
         <v-card-actions>
         </v-card-actions>
@@ -19,21 +12,11 @@
 </template>
 
 <script>
-import api from '@/services/api'
+
+import FoodList from './FoodList.vue'
 export default {
-    name: 'Foods',
-    data: () => ({
-        foods: []
-        }),
-        mounted () {
-            api.service('foods').find({}).then(
-                result => {
-                    this.foods = result.data
-           }
-        )
-    }
+  components: { FoodList },
+  name: 'Foods'
+
 }
 </script>
-
-
-
