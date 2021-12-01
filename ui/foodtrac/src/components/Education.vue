@@ -1,12 +1,12 @@
 <template>
   <h1>
-      Foodtrac
+      Education
   </h1>
 
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Education'
 }
 </script>

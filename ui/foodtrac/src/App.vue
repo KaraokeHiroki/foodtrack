@@ -51,22 +51,22 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn to="/about">
-        <span>About</span>
-
-        <v-icon>mdi-about</v-icon>
-      </v-btn>
-
       <v-btn to="/foods">
         <span>Foods</span>
 
-        <v-icon>mdi-map-marker</v-icon>
+        <v-icon>mdi-food-apple</v-icon>
       </v-btn>
 
       <v-btn to="/notifications">
         <span>Notifications</span>
 
-        <v-icon>mdi-map-marker</v-icon>
+        <v-icon>mdi-bell</v-icon>
+      </v-btn>
+
+      <v-btn to="/education">
+        <span>Education</span>
+
+        <v-icon>mdi-pencil</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </v-app>
