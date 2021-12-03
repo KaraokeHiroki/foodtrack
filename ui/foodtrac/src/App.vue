@@ -7,12 +7,11 @@
     >
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
+          alt="Foodtrac icon"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="./assets/foodtrac_icon.png"
           transition="scale-transition"
-          width="40"
+          width="50"
         />
 
         <v-img
