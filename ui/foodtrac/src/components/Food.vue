@@ -6,6 +6,13 @@
     <v-card-text>
       category: {{ category }}
     </v-card-text>
+    <v-card-actions>
+      <v-btn
+        to="/foods"
+      >
+        <v-icon>mdi-arrow-left</v-icon> Back
+      </v-btn>
+    </v-card-actions>
   </v-card>
 </template>
 
