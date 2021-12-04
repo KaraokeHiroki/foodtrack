@@ -34,7 +34,7 @@ module.exports = function (app) {
   notifications.associate = function (models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
-    notifications.belongsTo(models.items)
+    notifications.belongsTo(models.items);
   };
 
   return notifications;

@@ -5,7 +5,6 @@
         </v-card-title>
           <v-autocomplete
             v-model="value"
-            :items="items"
             dense
             filled
             label="Search"
@@ -24,6 +23,5 @@ import FoodList from './FoodList.vue'
 export default {
   components: { FoodList },
   name: 'Foods'
-
 }
 </script>

@@ -7,6 +7,8 @@ import Food from '@/components/Food.vue'
 import Notifications from '@/components/Notifications.vue'
 import Education from '@/components/Education.vue'
 import Settings from '@/components/Settings.vue'
+import AddFood from '@/components/AddFood.vue'
+import Items from '@/components/Items.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +47,16 @@ const routes = [
     path: '/Settings',
     name: 'Setting',
     component: Settings
+  },
+  {
+    path: '/AddFood',
+    name: 'AddFood',
+    component: AddFood
+  },
+  {
+    path: '/Items',
+    name: 'Item',
+    component: Items
   }
 ]
 

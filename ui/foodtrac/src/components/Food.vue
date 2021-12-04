@@ -6,6 +6,9 @@
     <v-card-text>
       category: {{ category }}
     </v-card-text>
+    <v-card-text>
+      shelf_life: {{ shelf_life }}
+    </v-card-text>
     <v-card-actions>
       <v-btn
         to="/foods"
@@ -15,6 +18,7 @@
       <v-spacer />
       <v-btn
         color="primary"
+        to="/AddFood"
       >
         <v-icon>mdi-plus</v-icon>
       </v-btn>
@@ -34,7 +38,8 @@ export default {
   },
   data: () => ({
     name: '',
-    category: ''
+    category: '',
+    shelf_life: ''
   }),
   mounted () {
     const id = this.$route.params.id || this.id
@@ -42,8 +47,13 @@ export default {
       result => {
         this.name = result.name
         this.category = result.category
+        this.shelf_life = result.shelf_life
       }
     )
+  },
+  methods: {
+    addFood () {
+    }
   }
 }
 </script>
