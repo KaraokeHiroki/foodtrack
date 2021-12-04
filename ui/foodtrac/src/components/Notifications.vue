@@ -1,8 +1,7 @@
 <template>
-  <h1>
-      Notifications
-  </h1>
-
+  <v-icon-title>
+    hi
+  </v-icon-title>
 </template>
 
 <script>

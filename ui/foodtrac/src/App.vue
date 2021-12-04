@@ -24,19 +24,20 @@
 
       <v-spacer></v-spacer>
 
+    <v-card-title>
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+        to="/settings"
         text
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <v-icon>mdi-cog</v-icon>
       </v-btn>
+    </v-card-title>
     </v-app-bar>
 
     <v-main>
       <router-view/>
     </v-main>
+
 <v-bottom-navigation
     :value="value"
     color="primary"

@@ -6,6 +6,7 @@ import Foods from '@/components/Foods.vue'
 import Food from '@/components/Food.vue'
 import Notifications from '@/components/Notifications.vue'
 import Education from '@/components/Education.vue'
+import Settings from '@/components/Settings.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/Education',
     name: 'Education',
     component: Education
+  },
+  {
+    path: '/Settings',
+    name: 'Setting',
+    component: Settings
   }
 ]
 

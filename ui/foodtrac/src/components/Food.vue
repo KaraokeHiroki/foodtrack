@@ -12,6 +12,12 @@
       >
         <v-icon>mdi-arrow-left</v-icon> Back
       </v-btn>
+      <v-spacer />
+      <v-btn
+        color="primary"
+      >
+        <v-icon>mdi-plus</v-icon>
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -31,10 +37,7 @@ export default {
     category: ''
   }),
   mounted () {
-    // try to get the food id from the URL
-    // fallback to the id  set in the props
     const id = this.$route.params.id || this.id
-    // get the data for the instructor to be displayed
     api.service('foods').get(id).then(
       result => {
         this.name = result.name

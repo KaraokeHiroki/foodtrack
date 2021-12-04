@@ -1,6 +1,6 @@
 <template>
   <h1>
-      Education
+    Food Waste
   </h1>
 
 </template>
