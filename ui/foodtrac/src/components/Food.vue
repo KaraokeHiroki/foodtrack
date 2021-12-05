@@ -18,7 +18,7 @@
       <v-spacer />
       <v-btn
         color="primary"
-        to="/AddFood"
+        to="/food/add"
       >
         <v-icon>mdi-plus</v-icon>
       </v-btn>

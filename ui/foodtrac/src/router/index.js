@@ -39,22 +39,22 @@ const routes = [
     component: Notifications
   },
   {
-    path: '/Education',
+    path: '/education',
     name: 'Education',
     component: Education
   },
   {
-    path: '/Settings',
+    path: '/settings',
     name: 'Setting',
     component: Settings
   },
   {
-    path: '/AddFood',
+    path: '/food/add',
     name: 'AddFood',
     component: AddFood
   },
   {
-    path: '/Items',
+    path: '/items',
     name: 'Item',
     component: Items
   }

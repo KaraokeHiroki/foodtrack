@@ -25,6 +25,7 @@ import api from '@/services/api'
 export default {
   name: 'AddFood',
   data: () => ({
+    id: '',
     name: '',
     category: '',
     shelf_life: ''
@@ -37,13 +38,8 @@ export default {
   methods: {
     add () {
       // get the food
-      api.service('foods').get(this.id, {
-        name: this.name,
-        category: this.category,
-        shelf_life: this.shelf_life
-      })
+      api.service('foods').get('')
         .then(() => this.$router.push('/foods'))
-        .catch(() => alert('Oops'))
     }
   }
 }

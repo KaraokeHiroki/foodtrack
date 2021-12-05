@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'notifications',
+  name: 'Notifications',
   data () {
     return {
       switch1: true,
